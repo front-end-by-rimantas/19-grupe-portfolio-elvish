@@ -31,7 +31,7 @@ body {
     .container > .row > .col-4-6 { grid-column: 4 / span 6; } /*for short p's and long headers */
     .container > .row > .col-5-4 { grid-column: 5 / span 4; } /*for short headers*/
     .container > .row > .col-2-10 { grid-column: 2 / span 10; } /*for long p's */
-    .container > .row > .col-6-7 { grid-column: 6 / span 7; } /*for nav*/
+    .container > .row > .col-6-7 { grid-column: 6 / span 7; } /* for nav */
 
 @media (max-width: 1300px) {
     .container {
