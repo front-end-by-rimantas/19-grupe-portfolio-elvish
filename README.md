@@ -4,14 +4,14 @@
 ![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)
 
 
-# Portfolio
+# Elvish Portfolio
 ### 19 group portfolio website project
 
-This project is for educational porpuses only. Pull request are welcome, but priority for my real-life students! Thank you for your cooperation!
+This project is for educational purposes.
 
 Site published at https://front-end-by-rimantas.github.io/19-grupe-portfolio/
 
-Design: [React theme five](https://react.theme-land.com/theme-five)
+Design: [Elvish](http://themesboss.com/elvish/index_6.html)
 
 
 ## Project features
@@ -23,4 +23,8 @@ Design: [React theme five](https://react.theme-land.com/theme-five)
 - no AJAX (data sending)
 
 ## Authors
-[Rimantas](https://github.com/belauzas)
+[Martyna](https://github.com/sezaite)
+[Andrius](https://github.com/Urbbiz)
+[Tomas](https://github.com/Tomas3000)
+[Gabriele](https://github.com/Gabrieleba)
+[Emilija](https://github.com/ESinkev)
