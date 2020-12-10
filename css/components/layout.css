@@ -70,6 +70,7 @@ body {
     .container > .row > .col-md-9 { grid-column: auto / span 9; }
     .container > .row > .col-md-10 { grid-column: auto / span 10; }
     .container > .row > .col-md-11 { grid-column: auto / span 11; }
+    .container > .row > .col-md-12 { grid-column: auto / span 12; }
 
 }
 
