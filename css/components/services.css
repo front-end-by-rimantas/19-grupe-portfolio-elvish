@@ -1,15 +1,22 @@
 .services {
     display: inline-block;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
+    font-weight: 500;
+    line-height: 30px;
     color: rgb(31, 29, 29);
     /* background-color: plum; */
 }
+    .services > span {
+        font-weight: bolder;
+
+    }
+
 .block {
-    padding: 50px;
+    padding: 10px;
     border-radius: 5px;
     text-align: center;
-    box-shadow: 0 0 1px #0003;
+    box-shadow: 0 0 5px #0003;
 
 }
 p {
@@ -21,36 +28,19 @@ h3 {
         color: rgb(31, 29, 29);
         text-align: center;
         font-size: 22px;
-        padding: 40px 0 0px;
-}
-
-.star::before {
-    /* background-color: powderblue; */
-    /* border-bottom: 1px solid; */
- 
-}
-.gray {
-    background-color: #F8F9FA;
+        padding: 30px 0 0px;
+        margin-bottom: 30px;
 
 }
+
+.star-asterisk {
+    font-size: 23px;
+}
+/* .gray {
+    background-color: #F8F9FA; */
+
+/* } */
 
 i {
     font-size: 45px;
 }
-/* .main-title-border:before {
-    display: inline-block;
-    margin-top: -7px;
-    vertical-align: middle;
-    content: "";
-    background-color: #d0d0d0;
-    width: 30px;
-    height: 1px;
-}
-.main-title-border:after {
-    display: inline-block;
-    margin-top: -7px;
-    vertical-align: middle;
-    content: "";
-    background-color: #d0d0d0;
-    width: 30px;
-    height: 1px; */
