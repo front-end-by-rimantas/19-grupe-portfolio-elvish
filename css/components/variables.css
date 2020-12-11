@@ -6,4 +6,5 @@
     --secondary-text-color: #fff;
     --light-text-color: #6c757d;
     --font-family: Roboto,"Helvetica Neue",Arial,sans-serif;
+    --opaque-white: rgba(255, 255, 255, 0.7);
 }
