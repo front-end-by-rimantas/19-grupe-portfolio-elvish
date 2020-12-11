@@ -1,0 +1,32 @@
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.testimonial.col-12 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.row  {
+   
+
+   
+  
+    
+}
+ .logo-image img {
+  
+    max-height: 100px;
+    width: auto;
+    margin-top: 1.5rem;
+    
+    
+    
+   
+}
+
