@@ -1,4 +1,6 @@
 :root {
+    --header-font: 'Montserrat', sans-serif;
+    --p-font: 'Nunito Sans', sans-serif;
     --section-padding: 80px;
     --primary-color: #fff;
     --secondary-color: #f8f9fa;
