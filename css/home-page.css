@@ -5,6 +5,9 @@
 /* 3rd party components */
 @import './components/font-awesome.min.css';
 @import './components/style.css';
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 /* your components */
 @import './components/button.css';
 @import './components/footer.css';
