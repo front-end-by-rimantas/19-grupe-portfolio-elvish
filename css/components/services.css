@@ -1,0 +1,46 @@
+.services {
+    display: inline-block;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 30px;
+    color: rgb(31, 29, 29);
+    /* background-color: plum; */
+}
+    .services > span {
+        font-weight: bolder;
+
+    }
+
+.block {
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 5px #0003;
+
+}
+p {
+    font-size: 17px;
+    text-align: center;
+}
+
+h3 {
+        color: rgb(31, 29, 29);
+        text-align: center;
+        font-size: 22px;
+        padding: 30px 0 0px;
+        margin-bottom: 30px;
+
+}
+
+.star-asterisk {
+    font-size: 23px;
+}
+/* .gray {
+    background-color: #F8F9FA; */
+
+/* } */
+
+i {
+    font-size: 45px;
+}
