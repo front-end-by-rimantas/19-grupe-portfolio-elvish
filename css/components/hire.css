@@ -34,15 +34,3 @@
                 font-size: 40px;
             }
 
-            .container.hire > .row > a {
-                margin-top: 24px;
-                text-decoration: none;
-                color: var(--secondary-text-color);
-                font-size: 15px;
-                border: 2px solid var(--secondary-text-color);
-                padding: 12px 26px;
-                line-height: 1.5;
-                border-radius: 0.25rem;
-                font-weight: 400;
-                letter-spacing: 1px;       
-            }
