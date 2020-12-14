@@ -1,6 +1,7 @@
-.about {
+.container.about .about {
     display: inline-block;
     font-size: 40px;
+    font-family: var(--header-font);
     text-align: center;
     font-weight: 500;
     line-height: 30px;
@@ -10,40 +11,44 @@
     font-weight: bolder;
 }
 .star-asterisk {
+    text-align: center;
     font-size: 23px;
 }
-h2 {
-    margin-bottom: 20px;
-}
-p {
-    margin-bottom: 50px;
-    font-size: 17px;
+.container.about p {
+    font-family: var(--p-font);
+    font-size: 16px;
     text-align: center;
+    color: var(--light-text-color);
+}
+.container.about img {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 45px;
+}
+.container.about .row h3 {
+    font-size: 34px;
 }
 .text-trio {
+    text-align: center;
     color: var(--light-text-color);
-    font-size: 23px;
+    font-size: 22px;
 }
 .text-trio > .text {
-    display: inline-block;
-}
+    display: inline-block; 
+} 
 .text-trio > .text > .span {
     display: inline-block;
 }
-img {
-    margin-top: 50px;
-    font-size: 45px;
-}
 .progress-bar {
     display: inline-block;
-    width: 65%;
+    width: 100%;
 }
 .progress-bar > .top {
     display: inline-block;
     width: 100%;
     margin-bottom: 10px;
     font-size: 18px;
-    line-height: 20px;
+    line-height: 50px;
 }
 .progress-bar > .top > .label {
     display: inline-block;
@@ -58,8 +63,6 @@ img {
     width: 100%;
     height: 4px;
     background-color: var(--secondary-color);
-    overflow: hidden;
-    text-align: left;
 }
 .progress-bar > .bottom > .bar {
     display: inline-block;
