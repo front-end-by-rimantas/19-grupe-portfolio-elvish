@@ -39,7 +39,7 @@
             .container.stats > .row > .col-3 > h2 {
                 display: inline-block;
                 width: 100%;
-                font-family: var(--font-family) ;
+                font-family: var(--header-font);
                 font-size: 40px;
                 line-height: 3.7rem;
                 color: var(--secondary-text-color);
@@ -49,7 +49,7 @@
             .container.stats > .row > .col-3 > p {
                 display: inline-block;
                 width: 100%;
-                font-family: var(--font-family);
+                font-family: var(--p-font);
                 font-size: 15px;
                 color: var(--opaque-white);
                 font-weight: 400;
