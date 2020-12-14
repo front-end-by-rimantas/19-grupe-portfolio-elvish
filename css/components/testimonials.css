@@ -1,30 +1,45 @@
-
-.container {
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
+.container.testimonial {
+    background-color: var(--secondary-color);
 }
 
-
 .testimonial.col-12 {
+    display: inline-block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
-.row  {
-   
-  
-    
+.trusted{
+    margin-bottom: 1.2rem;
+    display: inline-block;
+    font-family: var(--header-font);
+    font-weight: 450;
+    font-size: 32px;
 }
- .logo-image img {
-  
+
+.trusted span{
+    display: inline-block;
+    font-weight: 1000;
+    font-family: var(--header-font);
+}
+
+.sometext1{
+    margin-top: 1.2rem;
+    display: inline-block;
+    font-family: var(--p-font);
+    color: var(--light-text-color);
+    font-size: 17px;
+}
+
+
+
+.logo-image  {
     max-height: 100px;
-    width: auto;
     margin-top: 1.5rem;
-    
-    
-    
-   
+    text-align: center; 
+}
+
+.col-2.col-sm-12{
+    text-align: center;
 }
 
