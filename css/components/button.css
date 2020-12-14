@@ -30,7 +30,7 @@
         .btn.btn-dark {
             color: var(--primary-color);
             background-color: black;
-            border-color: black;
+            border: 2px solid black;
         }
 
         .btn.btn-dark:hover {
