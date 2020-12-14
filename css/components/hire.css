@@ -1,0 +1,36 @@
+ .container.hire {
+        background-color: grey;
+        background-image: url(../../img/Freelancer.jpg);
+        background-attachment: scroll;
+        background-position: center center;
+        background-size: cover; 
+        position: relative;
+        text-align: center; 
+    }
+    
+        .container.hire::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            background: var(--dark-overlay);
+        }
+    
+        .container.hire > .row {
+            display: inline-block;
+            z-index: 1;    
+        }
+
+            .container.hire > .row > h2 {
+                display: inline-block;
+                color: var(--secondary-text-color);
+                text-transform: capitalize;
+                font-family: var(--font-family);
+                margin-bottom: 8px;
+                font-weight: 500;
+                line-height: 1.2;
+                font-size: 40px;
+            }
+

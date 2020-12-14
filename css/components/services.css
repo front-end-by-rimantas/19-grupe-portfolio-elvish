@@ -1,0 +1,53 @@
+.gray {
+    background-color: var(--secondary-color);
+
+ }
+
+ .container.gray .services {
+    display: inline-block;
+    font-family: var( --header-font);
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 30px;
+    color: rgb(31, 29, 29);
+    /* background-color: plum; */
+}
+.services > span {
+        font-weight: bolder;
+
+    }
+
+    .container.gray .block {
+    padding: 10px;
+    border-radius: 3px;
+    text-align: center;
+    box-shadow: 0 0 1px #0003;
+
+}
+.container.gray p {
+    font-family: var( --p-font);
+    color: var(--light-text-color);
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.container.gray h3 {
+    font-family: var( --header-font);
+        color: rgb(31, 29, 29);
+        text-align: center;
+        font-size: 20px;
+        padding: 30px 0 0px;
+        margin-bottom: 30px;
+
+}
+
+.star-asterisk {
+    font-size: 23px;
+}
+
+
+i {
+    font-size: 45px;
+}
