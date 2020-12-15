@@ -1,6 +1,7 @@
 .contact-info {
     display: inline-block;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .col-12.getintouch {
@@ -8,6 +9,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    
 }
 
 
@@ -16,10 +18,11 @@
     .icons {
         display: inline-block;
         width: 100%;
-        font-size: 40px;
+        font-size: 32px;
         line-height: 42px;
         margin-bottom: 10px;
-        margin-top: 20px;
+       margin-top: 20px;
+        
     }
 
     .subheader {
@@ -34,21 +37,29 @@
         width: 100%;
         font-size: 18px;
         line-height: 24px;
-        color: #ced4da;
+        color: var(--light-text-color);
+        
     }
 
 form {
-    display: inline-block;
+  display: inline-block;
     width: 100%;
+   
 }    
+.rowto {
+
+    width: 100%;
+}
 
     .name {
         display: inline-block;
-        width: 45%;
+        width: 49%;
         font-size: 18px;
         line-height: 20px;
         margin-top: 10px;
-        margin-left: 15px;
+        
+        
+      
         
     }
 
@@ -59,25 +70,27 @@ form {
         line-height: 20px;
         margin-top: 10px;
        
-        margin-left: 20px;
+     
+
+        
     }
 
     .subject {
         display: inline-block;
-        width: 98%;
+        width: 100%;
         font-size: 18px;
         line-height: 20px;
         margin-top: 10px;
-        margin-left: 15px;
+        
     }
 
     .message {
         display: inline-block;
-        width: 98%;
+        width: 100%;
         font-size: 18px;
         line-height: 20px;
         margin-top: 10px;
-        margin-left: 15px;
+        
     }
 
 
@@ -97,9 +110,14 @@ form {
             height: 100px;
         }
 
-        .send {
-            display: inline-block;
-          
+        .btn.btn-dark {
+            color: var(--primary-color);
+            background-color: black;
+            border: 2px solid black;
+            cursor: pointer;
         }
 
-  
+        .btn.btn-dark:hover {
+            color: black;
+            background-color: var(--primary-color);
+        }
