@@ -1,18 +1,53 @@
-        .clients {
+   
+    .clients {
         background-color: grey;
         background-image: url(../../img/OurClient.jpg);
         background-attachment: scroll;
         background-position: center center;
         background-size: cover; 
         position: relative;
-        text-align: center; 
+        text-align: center;
+        color: var(--primary-color);
+        
+    
     }
-    .container.clients::before {
+
+      
+    .clients::before {
         content: "";
+        background: var(--dark-overlay);
         position: absolute;
         width: 100%;
         height: 100%;
         top: 0;
-        right: 0;
-        background: var(--dark-overlay);
+        right: 0;  
     }
+   .clients > .row {
+        z-index: 1;    
+    }
+    
+    .client {
+        display: inline-block;
+        color: var(--primary-color);
+        font-family: var(--header-font);
+        margin-bottom: -15px;
+        font-weight: 500;
+        line-height: 1.2;
+        font-size: 30px;
+        text-align: center;
+}
+.client > span {
+    font-family: var(--header-font);
+    font-weight: 700;
+}
+
+    .pastimonial {
+        margin-top: -20px;
+        font-family: var(--p-font);
+        color: var(--primary-color);
+        font-size: 17px;
+        text-align: center;
+    }
+
+}
+ 
