@@ -1,10 +1,10 @@
 {
   "name": "16-portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square) ![Security Status](https://img.shields.io/security-headers?label=Security&url=https%3A%2F%2Fgithub.com&style=flat-square) ![Gluten Status](https://img.shields.io/badge/Gluten-Free-green.svg) ![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)",
   "main": "index.js",
   "scripts": {
-    "dev": "live-server --port=8080",
+    "dev": "live-server --port=5500",
     "test": "jest --watchAll"
   },
   "keywords": [],
@@ -21,5 +21,14 @@
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
     }
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/front-end-by-rimantas/19-grupe-portfolio-elvish.git"
+  },
+  "bugs": {
+    "url": "https://github.com/front-end-by-rimantas/19-grupe-portfolio-elvish/issues"
+  },
+  "homepage": "https://github.com/front-end-by-rimantas/19-grupe-portfolio-elvish#readme"
 }
