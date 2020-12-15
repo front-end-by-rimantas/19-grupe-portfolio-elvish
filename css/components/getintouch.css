@@ -44,12 +44,10 @@
 form {
   display: inline-block;
     width: 100%;
+    
    
 }    
-.rowto {
 
-    width: 100%;
-}
 
     .name {
         display: inline-block;
@@ -58,6 +56,9 @@ form {
         line-height: 20px;
         margin-top: 10px;
         
+        padding-right: 15px;
+        
+        
         
       
         
@@ -65,11 +66,13 @@ form {
 
     .email {
         display: inline-block;
-        width: 50%;
+        width: 49%;
         font-size: 18px;
         line-height: 20px;
         margin-top: 10px;
-       
+        padding-left: 15px;
+        
+        
      
 
         
@@ -77,7 +80,7 @@ form {
 
     .subject {
         display: inline-block;
-        width: 100%;
+        width: 99%;
         font-size: 18px;
         line-height: 20px;
         margin-top: 10px;
@@ -86,7 +89,7 @@ form {
 
     .message {
         display: inline-block;
-        width: 100%;
+        width: 99%;
         font-size: 18px;
         line-height: 20px;
         margin-top: 10px;
@@ -103,6 +106,7 @@ form {
             margin-bottom: 20px;
             margin-top: 10px;
             font-size: 18px;
+            border: 1px solid #c9c4c4;
 
         }
 
