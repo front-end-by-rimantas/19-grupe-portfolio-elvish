@@ -12,9 +12,6 @@
     
 }
 
-
-
-
     .icons {
         display: inline-block;
         width: 100%;
@@ -41,7 +38,7 @@
         
     }
 
-form {
+ form {
   display: inline-block;
     width: 100%;
     
@@ -55,13 +52,8 @@ form {
         font-size: 18px;
         line-height: 20px;
         margin-top: 10px;
-        
-        padding-right: 15px;
-        
-        
-        
-      
-        
+        padding-right: 15px;   
+               
     }
 
     .email {
@@ -73,10 +65,8 @@ form {
         padding-left: 15px;
         
         
-     
-
-        
     }
+
 
     .subject {
         display: inline-block;
@@ -124,4 +114,17 @@ form {
         .btn.btn-dark:hover {
             color: black;
             background-color: var(--primary-color);
+        }
+      
+        @media (max-width: 860px) {
+            .email {
+                width: 99%;
+                padding-left: 0;
+            
+            }
+            .name{
+                width: 99%;
+                padding-right: 0;
+            }
+
         }
