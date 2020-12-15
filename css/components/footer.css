@@ -2,7 +2,6 @@
     display: inline-block;
     padding: 0 15px;
     background: var(--secondary-color);
-    font-family: var(--p-font);
     color: var(--light-text-color);  
 }
 .footer > .row {
@@ -13,7 +12,8 @@
     display: inline-block; 
     margin: 8px 0;
     line-height: 42px;
-    font-size: 18px;
+    font-family: var(--p-font);
+    font-size: 16px;
     font-weight: 400px;
     text-align: left;
 }
@@ -21,7 +21,8 @@
     display: inline-block;
     float: right;
     margin: 8px 0;
-    font-size: 18px;
+    font-family: var(--p-font);
+    font-size: 16px;
     font-weight: 400px;
 }
 .footer .socials .fa {
@@ -33,7 +34,7 @@
     width: 42px;
     height: 42px;
     margin-right: 8px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 38px;
     text-align: center;
     text-decoration: none;
