@@ -49,5 +49,41 @@
         text-align: center;
     }
 
-}
+    .testimonials {
+
+    }
+        .testimonials > .view {
+
+        }
+            .testimonials > .view > .list {
+
+            }
+                .testimonials > .list > .item {
+
+                }
+                    .testimonials > .item > .avatar {
+
+                    }
+                    .testimonials > .item > .name {
+
+                    }
+                    .testimonials > .item > .company {
+                    
+                    }
+                    .testimonials > .item > .description {
+                        
+                    }
+            .testimonials > .controls {
+
+            }
+            .testimonials > .controls > .minus {
+
+            }
+                .testimonials > .controls > .minus.active {
+
+                }
+                .testimonials > .controls > .minus.hover {
+
+                }
+
  
