@@ -1,18 +1,10 @@
-/* <div class="education-block col-sm-12">
-                        <h3>2006-3000</h3>
-                        <h4>Web Designer</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui.</p>
-                    </div>
+/* 
                     <div class="education-block col-sm-12">
                         <h3>2006-3000</h3>
                         <h4>Web Designer</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui.</p>
                     </div>
-                    <div class="education-block col-sm-12">
-                        <h3>2006-3000</h3>
-                        <h4>Web Designer</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui.</p>
-                    </div> */
+                     */
 
 const eduData = [
     {
