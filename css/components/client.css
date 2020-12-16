@@ -50,40 +50,73 @@
     }
 
     .testimonials {
+        display: inline-block;
+        width: 100%;
 
     }
         .testimonials > .view {
+            display: inline-block;
+            width: 100%;
 
         }
             .testimonials > .view > .list {
+                display: inline-block;
+                width: 100%;
 
             }
                 .testimonials > .list > .item {
+                    display: inline-block;
+                    width: 100%;
+                    padding: 0 80px;
+                    text-align: center;
 
                 }
                     .testimonials > .item > .avatar {
-
+                        display: inline-block;
+        
                     }
                     .testimonials > .item > .name {
+                        display: inline-block;
+                        width: 100%;
 
                     }
                     .testimonials > .item > .company {
+                        display: inline-block;
+                        width: 100%;
                     
                     }
                     .testimonials > .item > .description {
-                        
+                        display: inline-block;
+                        width: 100%;
+
                     }
             .testimonials > .controls {
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                
 
             }
             .testimonials > .controls > .minus {
+                display: inline-block;
+                width: 20px;
+                height: 6px;
+                border-radius: 30%;
+                margin: 30px 1px 0 4px;
+
+                background-color: var(--primary-color);
+                opacity: 0.5;
 
             }
+
+                .testimonials > .controls > .minus:hover {
+                    opacity: 0.75;
+
+                }
                 .testimonials > .controls > .minus.active {
+                    opacity: 1;
 
                 }
-                .testimonials > .controls > .minus.hover {
-
-                }
+               
 
  
