@@ -1,0 +1,130 @@
+.contact-info {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.col-12.getintouch {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+    .icons {
+        display: inline-block;
+        width: 100%;
+        font-size: 32px;
+        line-height: 42px;
+        margin-bottom: 10px;
+       margin-top: 20px;
+        
+    }
+
+    .subheader {
+        display: inline-block;
+        width: 100%;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .communication {
+        display: inline-block;
+        width: 100%;
+        font-size: 18px;
+        line-height: 24px;
+        color: var(--light-text-color);
+        
+    }
+
+ form {
+  display: inline-block;
+    width: 100%;
+    
+   
+}    
+
+
+    .name {
+        display: inline-block;
+        width: 49%;
+        font-size: 18px;
+        line-height: 20px;
+        margin-top: 10px;
+        padding-right: 15px;   
+               
+    }
+
+    .email {
+        display: inline-block;
+        width: 49%;
+        font-size: 18px;
+        line-height: 20px;
+        margin-top: 10px;
+        padding-left: 15px;
+        
+        
+    }
+
+
+    .subject {
+        display: inline-block;
+        width: 99%;
+        font-size: 18px;
+        line-height: 20px;
+        margin-top: 10px;
+        
+    }
+
+    .message {
+        display: inline-block;
+        width: 99%;
+        font-size: 18px;
+        line-height: 20px;
+        margin-top: 10px;
+        
+    }
+
+
+        input,
+        textarea {
+            display: inline-block;
+            width: 100%;
+            padding: 10px 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            font-size: 18px;
+            border: 1px solid #c9c4c4;
+
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        .btn.btn-dark {
+            color: var(--primary-color);
+            background-color: black;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+
+        .btn.btn-dark:hover {
+            color: black;
+            background-color: var(--primary-color);
+        }
+      
+        @media (max-width: 860px) {
+            .email {
+                width: 99%;
+                padding-left: 0;
+            
+            }
+            .name{
+                width: 99%;
+                padding-right: 0;
+            }
+
+        }
