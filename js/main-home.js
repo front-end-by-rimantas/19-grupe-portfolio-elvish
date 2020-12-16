@@ -25,7 +25,7 @@ EXECUTION
 
 /* header */
 /* hero */
-renderHeroSocials('.container.hero socials', heroData);
+renderHeroSocials('.container.hero .socials', heroData);
 /* about */
 /* services */
 /* statistics */
