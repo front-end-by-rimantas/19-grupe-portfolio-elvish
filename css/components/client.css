@@ -9,11 +9,10 @@
         text-align: center;
         color: var(--primary-color);
         
-    
-    }
+        }
 
-      
-    .clients::before {
+       
+        .clients::before {
         content: "";
         background: var(--dark-overlay);
         position: absolute;
@@ -21,25 +20,25 @@
         height: 100%;
         top: 0;
         right: 0;  
-    }
-   .clients > .row {
+        }
+        .clients > .row {
         z-index: 1;    
-    }
+        }
     
-    .client {
-        display: inline-block;
-        color: var(--primary-color);
-        font-family: var(--header-font);
-        margin-bottom: -15px;
-        font-weight: 500;
-        line-height: 1.2;
-        font-size: 30px;
-        text-align: center;
-}
-.client > span {
-    font-family: var(--header-font);
-    font-weight: 700;
-}
+        .client {
+            display: inline-block;
+            color: var(--primary-color);
+             font-family: var(--header-font);
+            margin-bottom: -15px;
+            font-weight: 500;
+            line-height: 1.2;
+            font-size: 30px;
+            text-align: center;
+        }
+            .client > span {
+            font-family: var(--header-font);
+            font-weight: 700;
+        }
 
     .pastimonial {
         margin-top: -20px;
@@ -49,17 +48,17 @@
         text-align: center;
     }
 
-    .testimonials {
+     .testimonials {
         display: inline-block;
         width: 100%;
 
     }
-        .testimonials > .view {
+     .testimonials > .view {
             display: inline-block;
             width: 100%;
 
         }
-            .testimonials > .view > .list {
+         .testimonials > .view > .list {
                 display: inline-block;
                 width: 100%;
 
@@ -71,26 +70,37 @@
                     text-align: center;
 
                 }
-                    .testimonials > .item > .avatar {
+            
+
+                .testimonials .avatar {
+
+                    display: inline-block;
+                    font-size: 60px;
+                }
+               
+                .testimonials .name {
                         display: inline-block;
+                        width: 100%; 
+                        font-size: 30px;
+                        
+
         
                     }
-                    .testimonials > .item > .name {
-                        display: inline-block;
-                        width: 100%;
 
-                    }
-                    .testimonials > .item > .company {
+                    
+                        
+                    .testimonials .company {
                         display: inline-block;
                         width: 100%;
                     
                     }
-                    .testimonials > .item > .description {
+                    .testimonials  .description {
                         display: inline-block;
                         width: 100%;
+                       
 
                     }
-            .testimonials > .controls {
+                   .testimonials > .controls {
                 display: inline-block;
                 width: 100%;
                 text-align: center;
@@ -109,11 +119,11 @@
 
             }
 
-                .testimonials > .controls > .minus:hover {
+            .testimonials > .controls > .minus:hover {
                     opacity: 0.75;
 
                 }
-                .testimonials > .controls > .minus.active {
+                .clients > .testimonials > .controls > .minus.active {
                     opacity: 1;
 
                 }
