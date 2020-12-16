@@ -7,8 +7,8 @@ class Validator {
         return true;
     }
     static isArray(data) {
-        if (typeof data !== 'array' || data === '') {
-            console.error('Error: data turi ne tuscia array');
+        if (!Array.isArray(data) || data === '') {
+            console.error('Error: data turi buti ne tuscia array');
             return false;
         }
         return true;
