@@ -1,7 +1,10 @@
 import { Validator } from '../validator/Validator.js'
 
-function isValidLink(link) {
+function isValidLink(icon, link) {
     if (!Validator.isLink(link)) {
+        return false;
+    }
+    if (!Validator.isIcon(icon)) {
         return false;
     }
     return true;
