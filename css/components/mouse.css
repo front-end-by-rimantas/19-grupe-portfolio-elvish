@@ -15,18 +15,29 @@
 .bounce {
 	position: absolute;
 	bottom: 30px;
-	left: 50% ;
+	left: 51% ;
 	width: 30px;
 	height: 50px ;
 	margin-left:-30px;
 	border:2px solid #ffffff ;
-	
 	border-radius:30px;
 	animation: bounce 2s infinite;
 	-webkit-animation: bounce 2s infinite;
 	-moz-animation: bounce 2s infinite;
-	-o-animation: bounce 2s infinite;
+    -o-animation: bounce 2s infinite;
+     opacity: 0.9;
 }
+
+.bounce>a{
+    text-decoration: none;
+    outline: none ;
+    box-shadow: none ;
+    color: tomato;  
+}
+
+
+
+
  
 @-webkit-keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}	
