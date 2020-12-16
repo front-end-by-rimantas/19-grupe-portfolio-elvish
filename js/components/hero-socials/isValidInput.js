@@ -4,7 +4,7 @@ function isValidInput(selector, data) {
     if (!Validator.isString(selector)) {
         return false;
     }
-    if (!Validator.isObject(data)) {
+    if (!Validator.isArray(data)) {
         return false;
     }
     return true;

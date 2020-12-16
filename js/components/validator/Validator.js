@@ -6,9 +6,9 @@ class Validator {
         }
         return true;
     }
-    static isObject(data) {
-        if (typeof data !== 'object' || Array.isArray(data) || data === null) {
-            console.error('Error: data turi buti objetas');
+    static isArray(data) {
+        if (typeof data !== 'array' || data === '') {
+            console.error('Error: data turi ne tuscia array');
             return false;
         }
         return true;
