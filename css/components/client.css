@@ -107,23 +107,22 @@
                 
 
             }
-            .testimonials > .controls > .minus {
+            .testimonials .controls .minus {
                 display: inline-block;
                 width: 20px;
                 height: 6px;
                 border-radius: 30%;
                 margin: 30px 1px 0 4px;
-
                 background-color: var(--primary-color);
                 opacity: 0.5;
 
             }
 
-            .testimonials > .controls > .minus:hover {
+            .testimonials .controls .minus:hover {
                     opacity: 0.75;
 
                 }
-                .clients > .testimonials > .controls > .minus.active {
+                .testimonials .controls .minus.active {
                     opacity: 1;
 
                 }
