@@ -13,6 +13,7 @@ class Education {
 
     init() {
         if (!this.isValidSelector()) {
+            console.error('Error: nerandu selectoriaus');
             return false;
         }
         this.splitArrays();
@@ -20,7 +21,7 @@ class Education {
     }
 
     splitArrays() {
-        if (!isArray()) {
+        if (!this.isData()) {
             return false;
         }
         for (let i = 0; i < this.data.length; i += 2) {
@@ -44,35 +45,45 @@ class Education {
         }
         this.DOMleft = leftSelector;
         this.DOMright = rightSelector;
+        return true;
     }
 
-    isArray() {
+    isData() {
         if (!Array.isArray(this.data) || this.data === []) {
             console.error('Error: duomenys turi buti ne tuscia array!');
             return false;
         }
+        return true;
     }
 
     renderLeft() {
         let HTML = '';
         for (let block of this.leftArr) {
             HTML += `<div class="education-block col-sm-12">
-                        <h3>${leftArr.years}</h3>
-                        <h4>${leftArr.title}</h4>
-                        <p>${leftArr.bio}</p>
+                        <h3>${block.years}</h3>
+                        <h4>${block.title}</h4>
+                        <p>${block.bio}</p>
                     </div>`
+        }
+        if (HTML === '') {
+            console.error('Error: nepavyko sugeneruoti kairiojo stulpelio turinio!')
+            return false
         }
         return HTML;
     }
 
     renderRight() {
         let HTML = '';
-        for (let block of this.leftArr) {
+        for (let block of this.rightArr) {
             HTML += `<div class="education-block col-sm-12">
-                        <h3>${rightArr.years}</h3>
-                        <h4>${rightArr.title}</h4>
-                        <p>${rightArr.bio}</p>
+                        <h3>${block.years}</h3>
+                        <h4>${block.title}</h4>
+                        <p>${block.bio}</p>
                     </div>`
+        }
+        if (HTML === '') {
+            console.error('Error: nepavyko sugeneruoti desiniojo stulpelio turinio!')
+            return false
         }
         return HTML;
     }
@@ -81,7 +92,6 @@ class Education {
         this.DOMleft.innerHTML = this.renderLeft();
         this.DOMright.innerHTML = this.renderRight();
     }
-
 
 }
 export { Education }

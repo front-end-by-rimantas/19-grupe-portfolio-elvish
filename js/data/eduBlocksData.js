@@ -1,21 +1,13 @@
-/* 
-                    <div class="education-block col-sm-12">
-                        <h3>2006-3000</h3>
-                        <h4>Web Designer</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui.</p>
-                    </div>
-                     */
-
 const eduData = [
     {
         years: "2020 - 2018",
-        title: "Web Designer",
+        title: "Also something else",
         bio: 'Lorem ipsum dolor sit amet consectetur adipisicing Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet?'
     },
 
     {
         years: "2016 - 2018",
-        title: "Freelance Web Designer",
+        title: "Web Designer",
         bio: 'Lorem ipsum dolor sit. Eveniet?'
     },
 
@@ -27,7 +19,7 @@ const eduData = [
 
     {
         years: "2015 - 2016",
-        title: "Intern Web Designer",
+        title: "Something else",
         bio: 'Lorem ipsum dolor sit amet consectetur adipisicing Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet?'
     },
 
