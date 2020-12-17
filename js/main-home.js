@@ -4,6 +4,8 @@ ALL IMPORTS
 
 /* header */
 /* hero */
+import { heroData } from './data/heroData.js';
+import { renderHeroSocials } from './components/hero-socials/renderHeroSocials.js'
 /* about */
 /* services */
 /* statistics */
@@ -23,6 +25,7 @@ EXECUTION
 
 /* header */
 /* hero */
+renderHeroSocials('.container.hero .socials', heroData);
 /* about */
 /* services */
 /* statistics */
