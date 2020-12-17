@@ -10,6 +10,8 @@ import { renderHeroSocials } from './components/hero-socials/renderHeroSocials.j
 /* services */
 /* statistics */
 /* education and experience */
+import { eduData } from './data/eduBlocksData.js';
+import { Education } from './components/education/Education.js';
 /* hire me */
 /* our work */
 /* testimonials */
@@ -30,6 +32,11 @@ renderHeroSocials('.container.hero .socials', heroData);
 /* services */
 /* statistics */
 /* education and experience */
+new Education({
+    selectorLeft: '#education-left',
+    selectorRight: '#education-right',
+    data: eduData
+});
 /* hire me */
 /* our work */
 /* testimonials */
