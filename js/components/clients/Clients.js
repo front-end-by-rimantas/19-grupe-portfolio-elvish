@@ -26,10 +26,33 @@ class Clients {
         return true;
     }
 
+    isValidClient(client) {
+        if (typeof client.name !== 'string' || client.name === '') {
+            console.error('Error: kliento vardas turi buti ne tuscias string');
+            return false;
+        }
+        if (typeof client.location !== 'string' || client.location === '') {
+            console.error('Error: kliento lokacija turi buti ne tuscias string');
+            return false;
+        }
+        if (typeof client.comment !== 'string' || client.location === '') {
+            console.error('Error: kliento komentaras turi buti ne tuscias string');
+            return false;
+        }
+        return true;
+    }
+
+    isArray() {
+        if (!Array.isArray(this.data) || this.data === []) {
+            console.error('Error: Data turi buti ne tuscia array!');
+            return false;
+        }
+    }
+
     generateClients() {
         let HTML = '';
         for (let client of this.data) {
-            if (!isValidClient(client)) {
+            if (!this.isValidClient(client)) {
                 continue;
             }
 
@@ -44,10 +67,13 @@ class Clients {
     }
 
     render() {
+        if (!this.isArray()) {
+            return false;
+        }
         const HTML = `<div class="testimonials">
         <div class="view">
             <div class="list style="width: 500%">
-               ${this.generateClients}
+               ${this.generateClients()}
             </div>
         </div>
         <div class="controls">
