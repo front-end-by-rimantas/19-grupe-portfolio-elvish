@@ -34,15 +34,34 @@
     font-weight: 600;
     padding-bottom: 1rem;
 }
+
 .secondtext {
     padding-bottom: 1rem;
+    font-size: 1.0rem;
+    font-weight: 700;
 }
+
 .thirdtext {
     padding-bottom: 1rem;
+    color: var(--light-text-color);
 }
+
 .fourttext {
     padding-top: 1rem;
+    color: var(--light-text-color);
+    font-size: 17px;
 }
-.fifttext {
+.thirdtext a{
+    font-size: 1.0rem;
+    font-weight: 700;
+
+}
+
+ .fifttext a {
+    color: #6c757d;
+    font-weight: 700;
+}
+.fifttext  {
     padding-top: 1rem;
+    
 }
