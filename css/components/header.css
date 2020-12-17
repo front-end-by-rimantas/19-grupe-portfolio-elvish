@@ -2,11 +2,12 @@ header.container {
     padding: 25px 0;
     width: 100%;
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
 }
-    header  img.logo {
+    img.logo {
         display: inline-block;
         float: left;
         height: 25px;
@@ -25,3 +26,8 @@ header.container {
             color: #fff;
             text-decoration: none;
         }
+@media (max-width: 800px) {
+    div.nav {
+        
+    } 
+}
