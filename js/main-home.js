@@ -15,6 +15,8 @@ import { Education } from './components/education/Education.js';
 /* hire me */
 /* our work */
 /* testimonials */
+import { clientsData } from './data/clientsData.js';
+import { Clients } from './components/clients/Clients.js'
 /* trusted, logos */
 /* subscribe */
 /* blog */
@@ -40,6 +42,12 @@ new Education({
 /* hire me */
 /* our work */
 /* testimonials */
+new Clients(
+    {
+        selector: '.container #testimonials',
+        data: clientsData
+    }
+)
 /* trusted, logos */
 /* subscribe */
 /* blog */
