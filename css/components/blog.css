@@ -1,0 +1,23 @@
+ .blog{
+
+    background-color:var(--secondary-color) ;
+}
+
+.blogrow{
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.blogbox>img {
+    display: inline-block;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center; 
+    
+ 
+}
+
+.blogbox{
+   display: inline-block;
+   
+}
