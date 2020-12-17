@@ -4,19 +4,17 @@ const servicesData = [
       title: 'Graphic Design',
       description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium provident quas expedita quibusdam cum eligendi.',
     },
-
     {
         icon: 'mbri-website-theme',
         title: 'Unlimited Color',
         description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium provident quas expedita quibusdam cum eligendi.',
-  
       },
       {
         icon: 'mbri-growing-chart',
         title: 'Media Marketing',
         description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium provident quas expedita quibusdam cum eligendi.',
-  
       },
+    
       {
         icon: 'mbri-wifi',
         title: 'Unlimited Wifi',
