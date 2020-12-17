@@ -1,5 +1,4 @@
  .blog{
-
     background-color:var(--secondary-color) ;
 }
 
@@ -12,12 +11,38 @@
     display: inline-block;
     width: 100%;
     border-radius: 5px;
-    text-align: center; 
-    
+    text-align: center;  
+    padding-bottom: 1rem;
  
 }
 
 .blogbox{
    display: inline-block;
-   
+   text-align: center;
+   background-color: white;
+   padding-bottom:1rem;
+  
+}
+
+.blogbox a{
+    text-decoration: none;
+    color: black;
+}
+
+.firsttext{
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+.secondtext {
+    padding-bottom: 1rem;
+}
+.thirdtext {
+    padding-bottom: 1rem;
+}
+.fourttext {
+    padding-top: 1rem;
+}
+.fifttext {
+    padding-top: 1rem;
 }
