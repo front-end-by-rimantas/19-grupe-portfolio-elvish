@@ -13,6 +13,13 @@ function renderServices(selector, data) {
     let HTML = '';
     for (let service of data) {
         console.log(feature);
+        HTML+= `<div class="col-4 col-sm-12">
+        <div class="block">
+            <i class="${service.icon}"></i>
+            <h3>${service.title}</h3>
+            <p>${service.description}.</p>
+        </div>
+    </div>`
     }
 
     DOM.innerHTML = HTML;
