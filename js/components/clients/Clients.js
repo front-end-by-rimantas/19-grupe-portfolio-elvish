@@ -2,9 +2,8 @@ class Clients {
     constructor(params) {
         this.selector = params.selector || 'body';
         this.data = params.data || [];
-        this.icon =
 
-            this.DOM = null;
+        this.DOM = null;
 
         this.init();
     }
@@ -13,7 +12,7 @@ class Clients {
         if (!this.isValidSelector()) {
             return false;
         }
-        render();
+        this.render();
     }
 
     isValidSelector() {
@@ -47,6 +46,7 @@ class Clients {
             console.error('Error: Data turi buti ne tuscia array!');
             return false;
         }
+        return true;
     }
 
     generateClients() {
@@ -55,7 +55,6 @@ class Clients {
             if (!this.isValidClient(client)) {
                 continue;
             }
-
             HTML += `<div class="item" style="width: 20%">
         <i class="fa fa-user-circle-o avatar"></i>
         <div class="name">${client.name}</div>
@@ -64,6 +63,7 @@ class Clients {
         </p>
     </div>`
         }
+        return HTML;
     }
 
     render() {
