@@ -6,6 +6,15 @@
  */
 function renderServices(selector, data) {
     // input valitation
+    if (typeof selector !== 'string') {
+        console.error('Error: premum features selector has to be a string type');
+        return false;
+    }
+    if (!Array.isArray(data.data)) {
+        console.error('Error: premum features data has to be a array type');
+        return false;
+    }
+
 
     // logic
     const DOM = document.querySelector(selector);
