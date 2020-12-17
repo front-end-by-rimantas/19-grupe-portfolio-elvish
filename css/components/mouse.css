@@ -17,12 +17,13 @@
 .fa-angle-double-down:before {content: "\f107";}
 
 .bounce {
+	
 	position: absolute;
 	bottom: 50px;
-	left: 51% ;
+	left: 50% ;
+	transform: translateX(-50%);
 	width: 30px;
 	height: 50px ;
-	margin-left:-30px;
 	border:2px solid #ffffff ;
 	border-radius:30px;
 	animation: bounce 2s infinite;
@@ -33,20 +34,18 @@
 }
 
 .linktest>a{
-    width: 40px;
-	height: 40px;
+	display: inline-block;
+    width: 35px;
+	height: 60px;
 	position: absolute;
 	z-index: 8;
-	background-color: tomato;
-	bottom: 0px;
-    
+	bottom: 50px;
+	left: 50%;
+	
 }
 
 
-
-
  
-
 @keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
 	40% {transform: translateY(-30px);}
