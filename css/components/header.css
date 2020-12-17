@@ -1,0 +1,27 @@
+header.container {
+    padding: 25px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+    header  img.logo {
+        display: inline-block;
+        float: left;
+        height: 25px;
+    }
+    div.nav {
+        display: inline-block;
+        float: right;
+        font-family: var(--header-font);
+    }
+        div.nav > a {
+            display: inline-block;
+            float: left;
+            padding: 0 12px;
+            font-size: 18px;
+            line-height: 25px;
+            color: #fff;
+            text-decoration: none;
+        }
