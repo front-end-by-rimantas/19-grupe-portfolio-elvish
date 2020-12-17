@@ -72,7 +72,7 @@ class Clients {
         }
         const HTML = `<div class="testimonials">
         <div class="view">
-            <div class="list style="width: 500%">
+            <div class="list" style="width: 500%">
                ${this.generateClients()}
             </div>
         </div>
