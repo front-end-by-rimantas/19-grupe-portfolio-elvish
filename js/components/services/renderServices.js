@@ -19,5 +19,7 @@ function renderServices(selector, data) {
 
     // post logic validation
 
-    // retur 
+    // return 
 }
+
+export { renderServices }

@@ -8,6 +8,7 @@ import { heroData } from './data/heroData.js';
 import { renderHeroSocials } from './components/hero-socials/renderHeroSocials.js'
 /* about */
 /* services */
+import { renderServices } from './components/services/renderServices.js';
 /* statistics */
 /* education and experience */
 import { eduData } from './data/eduBlocksData.js';
@@ -30,6 +31,7 @@ EXECUTION
 renderHeroSocials('.container.hero .socials', heroData);
 /* about */
 /* services */
+renderServices();
 /* statistics */
 /* education and experience */
 new Education({
