@@ -4,24 +4,23 @@
  * @param {Array} data  Sarasas objeku aprasanciu kiekviena Premium Feature
  * @returns{*}
  */
-function renderServices(selector, data) {
+function renderServices(selector, servData) {
     // input valitation
     if (typeof selector !== 'string') {
         console.error('Error: premum features selector has to be a string type');
         return false;
     }
-    if (!Array.isArray(data.data)) {
+    if (!Array.isArray(servData.data)) {
         console.error('Error: premum features data has to be a array type');
         return false;
     }
-
-
+   
     // logic
     const DOM = document.querySelector(selector);
     
     let HTML = '';
-    for (let service of data) {
-        console.log(service);
+    for (let service of servData.data) {
+        // console.log(service);
         HTML+= `<div class="col-4 col-sm-12">
         <div class="block">
             <i class="${service.icon}"></i>
