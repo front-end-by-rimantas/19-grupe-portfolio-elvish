@@ -42,9 +42,7 @@ function renderServices(selector, servData) {
 
     DOM.innerHTML = HTML;
 
-    // post logic validation
-
-    // return 
+    
 }
 
 export { renderServices }
