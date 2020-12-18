@@ -1,6 +1,7 @@
 
 const servicesData = {
   iconFolder: 'fonts',
+  // maxLimit: 3,
   data: [
     
     {

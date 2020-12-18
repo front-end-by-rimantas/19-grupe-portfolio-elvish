@@ -19,8 +19,9 @@ function renderServices(selector, servData) {
     const DOM = document.querySelector(selector);
     
     let HTML = '';
-    for (let service of servData.data) {
-        // console.log(service);
+    const count =  servData.maxLimit|| servData.data.length;
+    for ( let i=0; i<count; i++) {
+    const service = servData.data[i];
         HTML+= `<div class="col-4 col-sm-12">
         <div class="block">
             <i class="${service.icon}"></i>
