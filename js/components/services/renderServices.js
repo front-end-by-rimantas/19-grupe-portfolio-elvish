@@ -1,3 +1,6 @@
+import { isValidInput } from './isValidInput.js';
+import { isValidService} from './isValidService.js';
+
 /**
  * Our Services sekcija generuojanti funkcija
  * @param {string} selector  Css like salyga, kaip rasti norima vieta turinio generavimui
@@ -6,22 +9,28 @@
  */
 function renderServices(selector, servData) {
     // input valitation
-    if (typeof selector !== 'string') {
-        console.error('Error: premum features selector has to be a string type');
+    if (!isValidInput(selector, servData)) {
         return false;
     }
-    if (!Array.isArray(servData.data)) {
-        console.error('Error: premum features data has to be a array type');
-        return false;
-    }
+    
+    
    
     // logic
     const DOM = document.querySelector(selector);
+    if (!DOM) {
+        console.error(' ERROR: could not find an elements by a given selector')
+        return false;
+    }
     
     let HTML = '';
     const count =  servData.maxLimit|| servData.data.length;
+
     for ( let i=0; i<count; i++) {
     const service = servData.data[i];
+    if ( !isValidService(service)) {
+        continue;
+    }
+    
         HTML+= `<div class="col-4 col-sm-12">
         <div class="block">
             <i class="${service.icon}"></i>

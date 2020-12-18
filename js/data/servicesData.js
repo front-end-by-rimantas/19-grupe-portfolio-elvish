@@ -9,6 +9,7 @@ const servicesData = {
     title: 'Graphic Design',
     description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium provident quas expedita quibusdam cum eligendi.',
   },
+  
   {
   icon: 'mbri-website-theme',
   title: 'Unlimited Color',
