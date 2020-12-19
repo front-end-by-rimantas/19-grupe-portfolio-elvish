@@ -2,6 +2,9 @@ class Clients {
     constructor(params) {
         this.selector = params.selector || 'body';
         this.data = params.data || [];
+        this.testimonialsCount = params.testimonialsCount || 0;
+        this.pseudoCount = params.pseudoCount || 2;
+        this.areDotsVisible = params.areDotsVisible;
 
         this.DOM = null;
 
@@ -66,6 +69,16 @@ class Clients {
         return HTML;
     }
 
+    generateDots() {
+        let HTML = '';
+        if (!this.areDotsVisible) {
+            console.log('Taskeliai nustatyti buti nematomais');
+            return HTML;
+        }
+        HTML += `<div class="minus"></div>`.repeat(this.testimonialsCount);
+        return HTML;
+    }
+
     render() {
         if (!this.isArray()) {
             return false;
@@ -76,11 +89,7 @@ class Clients {
                ${this.generateClients()}
             </div>
         </div>
-        <div class="controls">
-            <div class="minus"></div>
-            <div class="minus"></div>
-            <div class="minus"></div>
-        </div>
+        <div class="controls">${this.generateDots()}</div>
     </div>`;
 
         this.DOM.innerHTML = HTML;
