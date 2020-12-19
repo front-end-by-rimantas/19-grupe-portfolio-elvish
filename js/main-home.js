@@ -49,7 +49,10 @@ new Education({
 new Clients(
     {
         selector: '.container #testimonials',
-        data: clientsData
+        data: clientsData,
+        testimonialsCount: 3,
+        pseudoCount: 2,
+        areDotsVisible: true
     }
 )
 /* trusted, logos */
