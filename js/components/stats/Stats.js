@@ -33,8 +33,20 @@ class Stats {
         return true;
     }
 
-    isValidItem() {
-
+    isValidItem(dataItem) {
+        if (typeof dataItem.icon !== 'string' || dataItem.icon === '') {
+            console.error('Error: ikona datoje turi buti ne tuscias string!');
+            return false;
+        }
+        if (typeof dataItem.header !== 'number' || dataItem.header < 0) {
+            console.error('Error: header datoje turi buti teigiamas skaicius');
+            return false;
+        }
+        if (typeof dataItem.text !== 'string' || dataItem.text === '') {
+            console.error('Error: tekstas datoje turi buti ne tuscias string!');
+            return false;
+        }
+        return true;
     }
 
     generateItems() {
@@ -47,7 +59,7 @@ class Stats {
                         <i class="mbri-${item.icon}" aria-hidden="true"></i>
                         <h2>${item.header}</h2>
                         <p>${item.text}</p>
-                    </div>`
+                    </div>`;
         }
         if (HTML === '') {
             console.error('Error: neapvyko sugeneruoti HTML turinio');
@@ -62,9 +74,10 @@ class Stats {
         }
         const HTML = this.generateItems();
         if (!HTML) {
+            console.error('Error: kazkas ne to');
             return false;
         }
-        this.DOM.innterHTML = HTML;
+        this.DOM.innerHTML = HTML;
     }
 }
 
