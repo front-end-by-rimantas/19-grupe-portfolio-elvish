@@ -6,6 +6,10 @@ class Clients {
         this.areDotsVisible = params.areDotsVisible;
 
         this.DOM = null;
+        this.listDOM = null;
+        this.controlsDOM = null;
+        this.dotsDOM = null;
+        this.activeDotIndex = 0;
 
         this.init();
     }
@@ -14,7 +18,12 @@ class Clients {
         if (!this.isValidSelector()) {
             return false;
         }
+        if (this.data.length < 1) {
+            console.error('Error: nera atsiliepimu duomenu');
+            return false;
+        }
         this.render();
+        this.addEvents();
     }
 
     isValidSelector() {
@@ -53,11 +62,13 @@ class Clients {
 
     generateClients() {
         let HTML = '';
-        for (let client of this.data) {
+        const itemWidth = 100 / ((2 * this.pseudoCount) + this.data.length);
+        const dataCopy = [this.data[2], this.data[1], ...this.data, this.data[0], this.data[1]]
+        for (let client of dataCopy) {
             if (!this.isValidClient(client)) {
                 continue;
             }
-            HTML += `<div class="item" style="width: 20%">
+            HTML += `<div class="item" style="width: ${itemWidth}%">
         <i class="fa fa-user-circle-o avatar"></i>
         <div class="name">${client.name}</div>
         <div class="company">${client.location}</div>
@@ -84,9 +95,10 @@ class Clients {
         if (!this.isArray()) {
             return false;
         }
+        const listWidth = (this.data.length + 2 * this.pseudoCount) * 100;
         const HTML = `<div class="testimonials">
         <div class="view">
-            <div class="list" style="width: 500%">
+            <div class="list" style="width: ${listWidth}%; margin-left: -${this.pseudoCount}00%;">
                ${this.generateClients()}
             </div>
         </div>
@@ -94,6 +106,40 @@ class Clients {
     </div>`;
 
         this.DOM.innerHTML = HTML;
+        console.log(this.DOM);
+
+        this.listDOM = this.DOM.querySelector('.list');
+        console.log(this.listDOM);
+
+        if (this.areDotsVisible) {
+            this.controlsDOM = this.DOM.querySelector('.controls');
+            this.dotsDOM = this.DOM.querySelectorAll('.minus');
+            console.log(this.dotsDOM);
+        }
+
+    }
+
+    clickDot(dotIndex) {
+        const dot = this.dotsDOM[dotIndex];
+        this.listDOM.style.marginLeft = -100 * (this.pseudoCount + dotIndex) + '%';
+        this.dotsDOM[this.activeDotIndex].classList.remove('active');
+        this.activeDotIndex = dotIndex;
+        dot.classList.add('active');
+
+
+
+    }
+
+    addEvents() {
+        if (this.areDotsVisible) {
+            for (let i = 0; i < this.dotsDOM.length; i++) {
+                const dot = this.dotsDOM[i];
+                dot.addEventListener('click', () => {
+                    this.clickDot(i);
+                }
+                )
+            }
+        }
     }
 }
 
