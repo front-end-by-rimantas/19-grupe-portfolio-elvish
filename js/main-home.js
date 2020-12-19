@@ -11,6 +11,8 @@ import { renderHeroSocials } from './components/hero-socials/renderHeroSocials.j
 import { renderServices } from './components/services/renderServices.js';
 import { servicesData } from './data/servicesData.js';
 /* statistics */
+import { statsData } from './data/statsData.js';
+import { Stats } from './components/stats/Stats.js';
 /* education and experience */
 import { eduData } from './data/eduBlocksData.js';
 import { Education } from './components/education/Education.js';
@@ -37,6 +39,12 @@ renderHeroSocials('.container.hero .socials', heroData);
 renderServices('#our_services_block', servicesData);
 
 /* statistics */
+
+new Stats({
+    selector: '',
+    data: statsData
+})
+
 /* education and experience */
 new Education({
     selectorLeft: '#education-left',

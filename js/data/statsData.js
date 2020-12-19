@@ -1,0 +1,7 @@
+const statsData = [
+    {
+
+    }
+]
+
+export { statsData }
