@@ -106,15 +106,12 @@ class Clients {
     </div>`;
 
         this.DOM.innerHTML = HTML;
-        console.log(this.DOM);
-
+  
         this.listDOM = this.DOM.querySelector('.list');
-        console.log(this.listDOM);
 
         if (this.areDotsVisible) {
             this.controlsDOM = this.DOM.querySelector('.controls');
             this.dotsDOM = this.DOM.querySelectorAll('.minus');
-            console.log(this.dotsDOM);
         }
     }
 
