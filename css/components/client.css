@@ -62,6 +62,7 @@
          .testimonials > .view > .list {
                 display: inline-block;
                 width: 100%;
+                transition: all 1s;
             }
                 .testimonials .list > .item {
                     width: 100%;
