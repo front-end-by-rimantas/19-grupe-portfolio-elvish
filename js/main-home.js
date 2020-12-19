@@ -50,7 +50,6 @@ new Clients(
     {
         selector: '.container #testimonials',
         data: clientsData,
-        testimonialsCount: 3,
         pseudoCount: 2,
         areDotsVisible: true
     }

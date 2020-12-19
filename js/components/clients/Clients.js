@@ -2,7 +2,6 @@ class Clients {
     constructor(params) {
         this.selector = params.selector || 'body';
         this.data = params.data || [];
-        this.testimonialsCount = params.testimonialsCount || 0;
         this.pseudoCount = params.pseudoCount || 2;
         this.areDotsVisible = params.areDotsVisible;
 
@@ -71,11 +70,13 @@ class Clients {
 
     generateDots() {
         let HTML = '';
+        const testimonialsCount = this.data.length;
         if (!this.areDotsVisible) {
             console.log('Taskeliai nustatyti buti nematomais');
             return HTML;
         }
-        HTML += `<div class="minus"></div>`.repeat(this.testimonialsCount);
+        HTML = `<div class="minus active"></div>`
+        HTML += `<div class="minus"></div>`.repeat(testimonialsCount - 1);
         return HTML;
     }
 
