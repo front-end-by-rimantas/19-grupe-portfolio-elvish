@@ -116,7 +116,6 @@ class Clients {
             this.dotsDOM = this.DOM.querySelectorAll('.minus');
             console.log(this.dotsDOM);
         }
-
     }
 
     clickDot(dotIndex) {
@@ -125,8 +124,6 @@ class Clients {
         this.dotsDOM[this.activeDotIndex].classList.remove('active');
         this.activeDotIndex = dotIndex;
         dot.classList.add('active');
-
-
 
     }
 
