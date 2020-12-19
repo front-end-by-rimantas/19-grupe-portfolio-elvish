@@ -41,9 +41,9 @@ renderServices('#our_services_block', servicesData);
 /* statistics */
 
 new Stats({
-    selector: '',
+    selector: '#stats',
     data: statsData
-})
+});
 
 /* education and experience */
 new Education({
