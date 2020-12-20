@@ -14,4 +14,11 @@ describe ('Bad script', () => {
         expect(isValidService(null)).toEqual(false);
 
     })
+    test('duotas teksto tipo nuotrauka', () => {
+        expect(isValidService({ icon: 53258 })).toEqual(false);
+        expect(isValidService({ icon: true })).toEqual(false);
+        expect(isValidService({ icon: false })).toEqual(false);
+        expect(isValidService({ icon: [] })).toEqual(false);
+        expect(isValidService({ icon: {} })).toEqual(false);
+    })
 })
