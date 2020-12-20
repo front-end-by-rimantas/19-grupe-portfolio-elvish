@@ -37,19 +37,20 @@ function renderServices(selector, servData) {
             <h3>${service.title}</h3>
             <p>${service.description}.</p>
         </div>
-    </div>`
+    </div>`;
     }
 
    
 
     // post logic validation
-    if (html === '') {
+    if (HTML === '') {
         console.error(' ERROR: given data object does not contain valid data')
         return false;
     }
 
     // return
     DOM.innerHTML = HTML;
+    return true;
 }
 
 export { renderServices }
