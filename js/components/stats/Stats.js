@@ -4,6 +4,7 @@ class Stats {
         this.data = params.data;
 
         this.DOM = null;
+        this.countersDOMs = null;
 
         this.init();
     }
@@ -13,6 +14,8 @@ class Stats {
             return false;
         }
         this.render();
+        this.addEvents();
+        this.isCounterValid();
     }
 
     isValidSelector() {
@@ -55,7 +58,7 @@ class Stats {
             if (!this.isValidItem(item)) {
                 continue;
             }
-            HTML += `<div class="col-3 col-sm-12">
+            HTML += `<div class="counter col-3 col-sm-12">
                         <i class="mbri-${item.icon}" aria-hidden="true"></i>
                         <h2>${item.header}</h2>
                         <p>${item.text}</p>
@@ -74,10 +77,29 @@ class Stats {
         }
         const HTML = this.generateItems();
         if (!HTML) {
-            console.error('Error: kazkas ne to');
             return false;
         }
         this.DOM.innerHTML = HTML;
+        this.countersDOMs = this.DOM.querySelectorAll('.counter');
+    }
+
+    addEvents() {
+        const windowBottom = scrollY + innerHeight;
+        let counterBottom = 0;
+
+        addEventListener('scroll', () => {
+            for (let counter of this.countersDOMs) {
+                counterBottom = counter.clientHeight + counter.offsetTop;
+
+                if (counterBottom < windowBottom) {
+                    counter.classList.add('animate');
+                }
+            }
+        })
+    }
+
+    isCounterValid() {
+
     }
 }
 
