@@ -16,10 +16,10 @@ function isValidService(service) {
     if (typeof service.icon !== 'string') {
         return false;
     }
-    if (typeof service.icon.length <5) {
+    if (service.icon.length <5) {
         return false;
     }
-    if (typeof service.icon.length >50) {
+    if (service.icon.length >50) {
         return false;
     }
 
