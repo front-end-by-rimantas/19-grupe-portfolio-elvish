@@ -1,8 +1,17 @@
 import { TestScheduler } from 'jest';
 import { isValidService } from './isValidService.js';
 
-describe ('', () => {
-    test('', () => {
-        expect(isValidService()).toBe();
+describe ('Bad script', () => {
+    test('catch emty data', () => {
+        expect(isValidService()).toEqual(false);
+    })
+    test('catch inproper types', () => {
+        expect(isValidService(456)).toEqual(false);
+        expect(isValidService('ffdss')).toEqual(false);
+        expect(isValidService(true)).toEqual(false);
+        expect(isValidService(false)).toEqual(false);
+        expect(isValidService([])).toEqual(false);
+        expect(isValidService(null)).toEqual(false);
+
     })
 })
