@@ -7,6 +7,8 @@ ALL IMPORTS
 import { heroData } from './data/heroData.js';
 import { renderHeroSocials } from './components/hero-socials/renderHeroSocials.js'
 /* about */
+import { renderAllProgressBars } from './components/progress-bar/renderAllProgressBars.js';
+import { progressBarData} from './data/progressBarData.js';
 /* services */
 import { renderServices } from './components/services/renderServices.js';
 import { servicesData } from './data/servicesData.js';
@@ -33,6 +35,7 @@ EXECUTION
 /* hero */
 renderHeroSocials('.container.hero .socials', heroData);
 /* about */
+renderAllProgressBars(progressBarData);
 /* services */
 renderServices('#our_services_block', servicesData);
 
