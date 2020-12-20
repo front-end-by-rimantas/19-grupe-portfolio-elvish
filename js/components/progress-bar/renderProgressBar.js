@@ -1,4 +1,9 @@
+import { isValidSingleProgressBar } from './isValidSingleProgressBar.js';
+
 function renderProgressBar(selector, title, value) {
+    if (!isValidSingleProgressBar({ selector, title, value })) {
+        return false;
+    }
 
     const HTML = `<div class="progress-bar">
                     <div class="top">
@@ -11,6 +16,12 @@ function renderProgressBar(selector, title, value) {
                 </div>`;
 
     const DOM = document.querySelector(selector);
+    
+    if (!DOM) {
+        console.error('ERROR: nerasta nurodyta vieta.');
+        return false;
+    }
+    
     DOM.insertAdjacentHTML('beforeend', HTML);
 
     return true;
