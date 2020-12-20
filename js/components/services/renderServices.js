@@ -40,9 +40,16 @@ function renderServices(selector, servData) {
     </div>`
     }
 
-    DOM.innerHTML = HTML;
+   
 
-    
+    // post logic validation
+    if (html === '') {
+        console.error(' ERROR: given data object does not contain valid data')
+        return false;
+    }
+
+    // return
+    DOM.innerHTML = HTML;
 }
 
 export { renderServices }
