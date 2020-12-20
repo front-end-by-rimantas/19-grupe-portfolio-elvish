@@ -49,7 +49,9 @@ new Education({
 new Clients(
     {
         selector: '.container #testimonials',
-        data: clientsData
+        data: clientsData,
+        pseudoCount: 2,
+        areDotsVisible: true
     }
 )
 /* trusted, logos */
