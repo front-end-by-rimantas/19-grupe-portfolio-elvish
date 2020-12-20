@@ -12,13 +12,18 @@ describe ('Bad script', () => {
         expect(isValidService(false)).toEqual(false);
         expect(isValidService([])).toEqual(false);
         expect(isValidService(null)).toEqual(false);
-
     })
-    test('duotas teksto tipo nuotrauka', () => {
+    test('given text type input for icon', () => {
         expect(isValidService({ icon: 53258 })).toEqual(false);
         expect(isValidService({ icon: true })).toEqual(false);
         expect(isValidService({ icon: false })).toEqual(false);
         expect(isValidService({ icon: [] })).toEqual(false);
         expect(isValidService({ icon: {} })).toEqual(false);
+    })
+    test('given text type input is normal length', () => {
+        expect(isValidService({ icon: '' })).toEqual(false);
+        expect(isValidService({ icon: 'a' })).toEqual(false);
+        expect(isValidService({ icon: 'asde' })).toEqual(false);
+        
     })
 })
