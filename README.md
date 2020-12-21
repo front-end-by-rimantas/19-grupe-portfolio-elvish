@@ -9,7 +9,7 @@
 
 This project is for educational purposes.
 
-Site published at (https://front-end-by-rimantas.github.io/19-grupe-portfolio-elvish)
+Site published at https://front-end-by-rimantas.github.io/19-grupe-portfolio-elvish
 
 Design: [Elvish](http://themesboss.com/elvish/index_6.html)
 
