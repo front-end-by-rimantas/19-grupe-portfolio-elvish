@@ -26,6 +26,8 @@ import { Clients } from './components/clients/Clients.js'
 /* blog */
 /* contact */
 /* footer */
+import { renderFooterSocials } from './components/footer-socials/renderFooterSocials.js';
+import { footerData } from './data/footerData.js';
 
 /***************
 EXECUTION
@@ -67,3 +69,4 @@ new Clients(
 /* blog */
 /* contact */
 /* footer */
+renderFooterSocials('.container.footer .socials', footerData);
