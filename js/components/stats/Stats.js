@@ -88,14 +88,16 @@ class Stats {
         addEventListener('scroll', () => {
             const windowBottom = scrollY + innerHeight;
             let counterBottom = 0;
-            for (let counter of this.countersDOMs) {
+            for (let i = 0; i < this.countersDOMs.length; i++) {
+                const counter = this.countersDOMs[i];
                 let counterPosition = counter.getBoundingClientRect();
                 counterBottom = counterPosition.bottom + scrollY;
 
                 if (counterBottom < windowBottom) {
-                    counter.classList.add('animate');
+                    this.data[i].animated = true;
                 }
             }
+            console.log(this.data);
         }
         )
     }
