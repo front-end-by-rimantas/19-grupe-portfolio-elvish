@@ -3,6 +3,7 @@ ALL IMPORTS
 ****************/
 
 /* header */
+import { headerData } from './data/headerData.js';
 /* hero */
 import { heroData } from './data/heroData.js';
 import { renderHeroSocials } from './components/hero-socials/renderHeroSocials.js'
