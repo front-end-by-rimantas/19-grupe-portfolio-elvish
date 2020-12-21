@@ -6,8 +6,8 @@ class Stats {
         this.DOM = null;
         this.countersDOMs = null;
 
-        this.animationDuration = 5;
-        this.animationFPS = 30;
+        this.animationDuration = 2;
+        this.animationFPS = 20;
 
         this.init();
     }
@@ -89,10 +89,14 @@ class Stats {
 
     counterAnimation(counterIndex) {
         let count = 0;
+        let tick = 0;
+        const totalTickCount = this.animationDuration * this.animationFPS;
         const numberDOM = this.countersDOMs[counterIndex].querySelector('h2');
         const timer = setInterval(() => {
-            numberDOM.innerText = count++;
-            if (this.data[counterIndex].header < count) {
+            count = Math.floor(tick / totalTickCount * this.data[counterIndex].header);
+            tick++;
+            numberDOM.innerText = count;
+            if (this.data[counterIndex].header === count) {
                 clearInterval(timer);
             }
         }, 1000 / this.animationFPS)
