@@ -81,21 +81,23 @@ class Stats {
         }
         this.DOM.innerHTML = HTML;
         this.countersDOMs = this.DOM.querySelectorAll('.counter');
+
     }
 
     addEvents() {
-        const windowBottom = scrollY + innerHeight;
-        let counterBottom = 0;
-
         addEventListener('scroll', () => {
+            const windowBottom = scrollY + innerHeight;
+            let counterBottom = 0;
             for (let counter of this.countersDOMs) {
-                counterBottom = counter.clientHeight + counter.offsetTop;
+                let counterPosition = counter.getBoundingClientRect();
+                counterBottom = counterPosition.bottom + scrollY;
 
                 if (counterBottom < windowBottom) {
                     counter.classList.add('animate');
                 }
             }
-        })
+        }
+        )
     }
 
     isCounterValid() {
