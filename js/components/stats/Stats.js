@@ -6,6 +6,9 @@ class Stats {
         this.DOM = null;
         this.countersDOMs = null;
 
+        this.animationDuration = 5;
+        this.animationFPS = 30;
+
         this.init();
     }
 
@@ -84,20 +87,34 @@ class Stats {
 
     }
 
+    counterAnimation(counterIndex) {
+        let count = 0;
+        const numberDOM = this.countersDOMs[counterIndex].querySelector('h2');
+        const timer = setInterval(() => {
+            numberDOM.innerText = count++;
+            if (this.data[counterIndex].header < count) {
+                clearInterval(timer);
+            }
+        }, 1000 / this.animationFPS)
+    }
+
     addEvents() {
         addEventListener('scroll', () => {
             const windowBottom = scrollY + innerHeight;
             let counterBottom = 0;
             for (let i = 0; i < this.countersDOMs.length; i++) {
+                if (this.countersDOMs[i].animated) {
+                    continue;
+                }
                 const counter = this.countersDOMs[i];
                 let counterPosition = counter.getBoundingClientRect();
                 counterBottom = counterPosition.bottom + scrollY;
 
                 if (counterBottom < windowBottom) {
                     this.data[i].animated = true;
+                    this.counterAnimation(i);
                 }
             }
-            console.log(this.data);
         }
         )
     }
