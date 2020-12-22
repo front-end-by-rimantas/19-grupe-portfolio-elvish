@@ -3,6 +3,8 @@ ALL IMPORTS
 ****************/
 
 /* header */
+import { headerData } from './data/headerData.js';
+import { renderHeader } from './components/header/renderHeader.js';
 /* hero */
 import { heroData } from './data/heroData.js';
 import { renderHeroSocials } from './components/hero-socials/renderHeroSocials.js'
@@ -36,6 +38,7 @@ EXECUTION
 ****************/
 
 /* header */
+renderHeader('header nav', headerData);
 /* hero */
 renderHeroSocials('.container.hero .socials', heroData);
 /* about */
