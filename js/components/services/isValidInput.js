@@ -1,31 +1,25 @@
+import {Validator} from '../validator/Validator.js';
+
 function isValidInput (selector, servData ) {
 
-    if (typeof selector !== 'string') {
+    if (!Validator.isString(selector)) {
+     
         // console.error('Error: our services selector has to be a string type');
         return false;
     }
-        if (selector === '') {
-            // console.error('Error: our services data cannot be emty');
-            return false;
-        }
-        if (selector === 'number') {
-            // console.error('Error: our services data cannot be numeric');
-            return false;
-        }
+        // if (selector === 'number') {
+        //     // console.error('Error: our services data cannot be numeric');
+        //     return false;
+        // }
 
-        if (typeof servData !== 'object' ||
-        Array.isArray(servData) ||
-        servData === null){
+        if (!Validator.isObject(servData)) {
         // console.error('Error: our services data has to be a array type');
         return false;
 
         }
-    
-    if (!Array.isArray(servData.data)) {
-        // console.error('Error: our services data has to be a array type');
-        return false;
-    }
-   
+        if (!Validator.isArray(servData.data)) {
+            return false;
+        }
     
 
     return true;

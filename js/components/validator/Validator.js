@@ -13,6 +13,14 @@ class Validator {
         }
         return true;
     }
+    static isObject(object) {
+        if (typeof object !== 'object' ||
+            Array.isArray(object) ||
+            object === null) {
+            return false;
+        }
+        return true;
+    }
     static isIcon(icon) {
         if (typeof icon !== 'string' || icon === '') {
             console.error('Error: ikona turi buti ne tuscias stringas');
