@@ -1,7 +1,7 @@
 class Validator {
     static isString(selector) {
-        if (typeof selector !== 'string' || selector === '') {
-            console.error('Error: selektorius turi buti ne tuscias stringas!');
+        if (typeof selector !== 'string' || selector === '' || selector ==="number") {
+            console.error('Error: selektorius turi buti ne tuscias stringas ir ne skaitmenys!');
             return false;
         }
         return true;
