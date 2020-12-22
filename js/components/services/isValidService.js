@@ -1,3 +1,5 @@
+import {Validator} from '../validator/Validator.js';
+
 function isValidService(service) {
     if (typeof service !== 'object' ||
         service === null ||
