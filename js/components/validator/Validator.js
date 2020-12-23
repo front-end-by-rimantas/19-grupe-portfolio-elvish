@@ -36,6 +36,13 @@ class Validator {
         }
         return true;
     }
+    static isTitle(text) {
+        if (typeof text !== 'string' ||
+            text === '' ||
+            text > 50) {
+            return false;
+        }
+    }
 }
 
 export { Validator }
