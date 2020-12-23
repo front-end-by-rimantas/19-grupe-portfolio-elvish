@@ -13,15 +13,11 @@ function isValidService(service) {
         // console.error('ERROR: description is not string');
         return false;
     }
-    if (typeof service.icon !== 'string') {
+
+    if (!Validator.isIcon(service.icon)) {
         return false;
     }
-    if (service.icon.length <5) {
-        return false;
-    }
-    if (service.icon.length >50) {
-        return false;
-    }
+   
 
 
 

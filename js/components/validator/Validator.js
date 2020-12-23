@@ -22,7 +22,8 @@ class Validator {
         return true;
     }
     static isIcon(icon) {
-        if (typeof icon !== 'string' || icon === '') {
+        if (typeof icon !== 'string' || icon === '' ||
+        icon.length < 5 || icon.length > 50 ) {
             console.error('Error: ikona turi buti ne tuscias stringas');
             return false;
         }
