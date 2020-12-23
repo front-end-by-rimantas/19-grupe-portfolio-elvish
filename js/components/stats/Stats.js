@@ -18,7 +18,7 @@ class Stats {
         }
         this.render();
         this.addEvents();
-        this.isCounterValid();
+        this.shouldCounterAnimationRun();
     }
 
     isValidSelector() {
@@ -126,10 +126,6 @@ class Stats {
         addEventListener('scroll', () => {
             this.shouldCounterAnimationRun();
         });
-    }
-
-    isCounterValid() {
-
     }
 }
 
