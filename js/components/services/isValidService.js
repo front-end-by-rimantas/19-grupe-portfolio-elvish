@@ -1,10 +1,8 @@
 import {Validator} from '../validator/Validator.js';
 
 function isValidService(service) {
-    if (typeof service !== 'object' ||
-        service === null ||
-        service === undefined) {
-        // console.error('ERROR: this is not object.');
+    if (!Validator.isObject(service)) {
+        // console.error('ERROR: this is not an  object.');
         return false;
     }
     if (typeof service.title !== 'string') {
