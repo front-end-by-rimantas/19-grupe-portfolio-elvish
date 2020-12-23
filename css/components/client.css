@@ -1,7 +1,7 @@
    
     .clients {
         background-color: grey;
-        background-image: url(../../img/OurClient.jpg);
+        background-image: url(../../img/our_client.jpg);
         background-attachment: scroll;
         background-position: center center;
         background-size: cover; 
@@ -62,11 +62,11 @@
          .testimonials > .view > .list {
                 display: inline-block;
                 width: 100%;
+                transition: all 1s;
             }
                 .testimonials .list > .item {
-                    display: inline-block;
                     width: 100%;
-                    padding: 0 80px;
+                    padding: 0 40px;
                     text-align: center;
                     float: left;
                 }
@@ -109,7 +109,7 @@
                         margin-bottom: 30px;
                      }
 
-            .testimonials .controls .minus {
+            .testimonials > .controls .minus {
                 display: inline-block;
                 width: 13px;
                 height: 6px;
@@ -120,14 +120,14 @@
                 transition: all 0.5s;
             }
 
-            .testimonials .controls .minus:hover {
+            .testimonials > .controls .minus:hover {
                     opacity: 0.75;
                     width: 25px;
-                     height: 6px;
-                     cursor: pointer;
+                    height: 6px;
+                    cursor: pointer;
                 }
                 
-                .testimonials .controls .minus.active {
+                .testimonials > .controls .minus.active {
                     opacity: 1;
                     width: 25px;
                     height: 6px;

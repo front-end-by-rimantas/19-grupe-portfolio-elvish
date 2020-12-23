@@ -12,12 +12,12 @@ header.container {
         float: left;
         height: 25px;
     }
-    div.nav {
+    nav {
         display: inline-block;
         float: right;
         font-family: var(--header-font);
     }
-        div.nav > a {
+        nav > a {
             display: inline-block;
             float: left;
             padding: 0 12px;
