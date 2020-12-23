@@ -42,6 +42,15 @@ class Validator {
             text > 50) {
             return false;
         }
+        return true;
+    }
+    static isDescription(text) {
+        if (typeof text !== 'string' ||
+            text === '' ||
+            text > 1000) {
+            return false;
+        }
+        return true;
     }
 }
 

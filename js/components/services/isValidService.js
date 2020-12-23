@@ -5,12 +5,15 @@ function isValidService(service) {
         // console.error('ERROR: this is not an  object.');
         return false;
     }
-    if (typeof service.title !== 'string') {
-        // console.error('ERROR: title is not  array');
+    // if (typeof service.title !== 'string') {
+    //     // console.error('ERROR: title is not  array');
+    //     return false;
+    // }
+    if (!Validator.isTitle(service.title)) {
         return false;
     }
-    if (typeof service.description !== 'string') {
-        // console.error('ERROR: description is not string');
+    
+    if (!Validator.isDescription(service.description)) {
         return false;
     }
 
