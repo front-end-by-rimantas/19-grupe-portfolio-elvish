@@ -131,6 +131,18 @@
         content: 'A Developer.';
         opacity: 0;
     }
+    70% {
+        content: 'A Designer.';
+        opacity: 0;
+    }
+    85% {
+        content: 'A Designer.';
+        opacity: 1;
+    }
+    100% {
+        content: 'A Designer.';
+        opacity: 0;
+    }
 
   }
 @media (max-width: 700px){
