@@ -66,8 +66,10 @@
     margin-top: 16px;
 }
 
-.container.hero > .row  h1 > span {
+.container.hero > .row  h1 > span::before {
     font-weight: 700;
+    content: '';
+    animation: animate infinite 30s;
 }
 
 .container.hero > .row .socials {
