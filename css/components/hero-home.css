@@ -119,6 +119,19 @@
         content: 'Elvish Walters.';
         opacity: 0;
     }
+    35% {
+        content: 'A Developer.';
+        opacity: 0;
+    }
+    50% {
+        content: 'A Developer.';
+        opacity: 1;
+    }
+    60% {
+        content: 'A Developer.';
+        opacity: 0;
+    }
+
   }
 @media (max-width: 700px){
     .container.hero > .row h1 {
