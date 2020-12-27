@@ -105,6 +105,21 @@
     top: 0px;
     left: 0;
   }
+
+  @keyframes animate {
+      0% {
+          content: 'Elvish Walters.';
+          opacity: 0;
+      }
+      15% {
+        content: 'Elvish Walters.';
+        opacity: 1;
+    }
+    25% {
+        content: 'Elvish Walters.';
+        opacity: 0;
+    }
+  }
 @media (max-width: 700px){
     .container.hero > .row h1 {
         font-size: 40px;
