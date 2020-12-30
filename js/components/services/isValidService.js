@@ -1,27 +1,26 @@
+import {Validator} from '../validator/Validator.js';
+
 function isValidService(service) {
-    if (typeof service !== 'object' ||
-        service === null ||
-        service === undefined) {
-        // console.error('ERROR: this is not object.');
+    if (!Validator.isObject(service)) {
+        // console.error('ERROR: this is not an  object.');
         return false;
     }
-    if (typeof service.title !== 'string') {
-        // console.error('ERROR: title is not  array');
+    // if (typeof service.title !== 'string') {
+    //     // console.error('ERROR: title is not  array');
+    //     return false;
+    // }
+    if (!Validator.isTitle(service.title)) {
         return false;
     }
-    if (typeof service.description !== 'string') {
-        // console.error('ERROR: description is not string');
+    
+    if (!Validator.isDescription(service.description)) {
         return false;
     }
-    if (typeof service.icon !== 'string') {
+
+    if (!Validator.isIcon(service.icon)) {
         return false;
     }
-    if (service.icon.length <5) {
-        return false;
-    }
-    if (service.icon.length >50) {
-        return false;
-    }
+   
 
 
 

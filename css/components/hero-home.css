@@ -66,8 +66,10 @@
     margin-top: 16px;
 }
 
-.container.hero > .row  h1 > span {
+.container.hero > .row  h1 > span::before {
     font-weight: 700;
+    content: '';
+    animation: animate infinite 30s;
 }
 
 .container.hero > .row .socials {
@@ -102,6 +104,46 @@
     position: absolute;
     top: 0px;
     left: 0;
+  }
+
+  @keyframes animate {
+      0% {
+          content: 'Elvish Walters.';
+          opacity: 0;
+      }
+      15% {
+        content: 'Elvish Walters.';
+        opacity: 1;
+    }
+    25% {
+        content: 'Elvish Walters.';
+        opacity: 0;
+    }
+    35% {
+        content: 'A Developer.';
+        opacity: 0;
+    }
+    50% {
+        content: 'A Developer.';
+        opacity: 1;
+    }
+    60% {
+        content: 'A Developer.';
+        opacity: 0;
+    }
+    70% {
+        content: 'A Designer.';
+        opacity: 0;
+    }
+    85% {
+        content: 'A Designer.';
+        opacity: 1;
+    }
+    100% {
+        content: 'A Designer.';
+        opacity: 0;
+    }
+
   }
 @media (max-width: 700px){
     .container.hero > .row h1 {
